@@ -11,14 +11,14 @@ folder1:
 folder2:
 	mkdir -p bin
 
-bin/geometry.exe: build/src/main.o build/src/circle.o build/src/is_more_then_0.o
-	g++ $(CFLAGS) $^ -o $@
+bin/geometry.exe: build/main.o build/circle.o build/is_more_then_0.o
+    g++ $(CFLAGS) $^ -o $@
 
-build/src/main.o: src/main.c src/geometry.h
+build/main.o: src/main.c src/geometry.h
 	$(OBJ)
-build/src/main.o: src/circle.c src/geometry.h
+build/main.o: src/circle.c src/geometry.h
 	$(OBJ)
-build/src/main.o: src/is_more_then_0.c src/geometry.h
+build/main.o: src/is_more_then_0.c src/geometry.h
 	$(OBJ)
 
 clean:
