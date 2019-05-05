@@ -1,6 +1,4 @@
-#include "is_more_then_0.c"
-#include "circle.c"
-const float p = 3.1415912;
+#include "geometry.h"
 
 int main() {
   	int x1, y1;
