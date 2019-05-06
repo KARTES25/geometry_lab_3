@@ -3,12 +3,16 @@
 #include <stdlib.h>
 using namespace std;
 
-int is_more_then_0(){
+void is_more_then_0(float& r2){
 
-		int r2;
-	cout<<"enter radius (more than 0) ";
+
+        cout<<"enter radius (more than 0) ";
         cin>>r2;
        if (r2<=0)
-		is_more_then_0(); else
-		return(r2);
+       { 
+	cout<<"the data is erroneous";       
+       	       	exit(1);
+	       }
+	
 }
+
