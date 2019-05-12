@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+#include "catch.hpp"
 #include <stdlib.h>
 using namespace std;
 
