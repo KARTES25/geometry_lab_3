@@ -1,6 +1,6 @@
 CFLAGS = -Wall -Werror
 OBJ = g++ $(CFLAGS) -c $< -o $@
-TEST = g++ $(GFAGS) -I thirtdparty/catch2 -c $< -o $@
+TEST = g++ $(GFAGS) -I thirdparty/catch2 -c $< -o $@
 .PHONY: clean
 
 all: folder1 folder2 folder3 folder4 bin/geometry.exe
@@ -28,14 +28,14 @@ build/src/is_more_then_0.o: src/is_more_then_0.c src/geometry.h
 	$(OBJ)
 
 
-bin/geometry-test: build/test/test.o build/test/circle.o build/test/is_more_then_0.o
-	g++ $(CFLAGS) -I thirtdparty/catch2  $^ -o $@
-build/test/test.o: test/test.c test/geometry-test.h
-
-build/test/circle.o:test/circle-test.c test/geometry-test.h
-
-build/test/is_more_then_0.o:test/is_more_then_0.c test/geometry-test.h
-
+bin/geometry-test: build/test/test.o build/test/circle-test.o build/test/is_more_then_0-test.o
+	g++ $(CFLAGS) -I thirdparty/catch2  $^ -o $@
+build/test/test.o: test/test.c 
+	$(TEST)
+build/test/circle-test.o:test/circle-test.c test/geometry-test.h
+	$(TEST)
+build/test/is_more_then_0-test.o:test/is_more_then_0-test.c test/geometry-test.h
+	$(TEST)
 
 clean:
 	rm build/*.o
