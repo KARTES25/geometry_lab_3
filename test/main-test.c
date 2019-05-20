@@ -1,4 +1,4 @@
-#include "geometry.h"
+#include "geometry-test.h"
 
 int main() {
   int x1, y1;
