@@ -2,7 +2,7 @@
 
 int is_more_then_0(float &r2) {
 
-  cin >> r2;
+ 
   if (r2 <= 0)
     return 0;
   return 1;
