@@ -1,0 +1,39 @@
+* [33m332fa4b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m fikset bags
+* [33md5024e1[m[33m ([m[1;31morigin/tests[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m no ready test
+* [33mf12e72a[m add test
+* [33mbfb491c[m add test for function
+* [33mdf63f0c[m add test for circle
+* [33m13b091a[m add catch
+* [33m501881d[m create test
+* [33md54d169[m create circle-test
+* [33mfe3d609[m create is_more_then_0-test
+* [33mc5ecdbc[m create geometry.h
+* [33m86d0b91[m create main-test
+* [33mdb5e971[m clang for .h
+* [33m08903e3[m chenge travis cod
+* [33m0a8de64[m clang on geometry
+* [33m92711d8[m clang-format for travis
+* [33m3bf9e82[m change travis
+* [33m8ef95ed[m add README
+* [33m2146a24[m clang-format
+*   [33md2f3a77[m Merge branch 'create_Make'
+[32m|[m[33m\[m  
+[32m|[m * [33mafe5ce7[m change make
+[32m|[m * [33m9626c98[m create and made makefile
+[32m|[m[32m/[m  
+* [33ma3f8bfc[m last change main
+* [33m85bda7e[m create geometry.h
+* [33m1825abc[m create check function
+* [33m43b90cd[m last change main
+*   [33m88397fb[m Merge branch 'split_to_files'
+[34m|[m[35m\[m  
+[34m|[m * [33m9d42f35[m create makefile
+[34m|[m * [33maae4f93[m add connection input check
+[34m|[m * [33mf0aa959[m removed input check
+[34m|[m * [33me2b9856[m changed name
+[34m|[m * [33m360fa26[m removed function circle
+[34m|[m * [33m749951f[m separeted function circle
+* [35m|[m [33me507a8c[m delete papki
+[35m|[m[35m/[m  
+* [33mf815024[m add circle easy
+* [33m1d9ab25[m create papki

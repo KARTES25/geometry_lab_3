@@ -1,6 +1,6 @@
 CFLAGS = -Wall -Werror
-OBJ = g++ $(CFLAGS) -c $< -o $@
-TEST = g++ $(GFAGS) -I thirdparty/catch2 -c $< -o $@
+OBJ = g++ -std=c++11 $(CFLAGS) -c $< -o $@
+TEST = g++ -std=c++11 $(GFAGS) -I thirdparty/catch2 -c $< -o $@
 .PHONY: clean
 
 all: folder1 folder2 folder3 folder4 bin/geometry.exe
